@@ -328,6 +328,13 @@ body{
         padding-right: 90px;
         padding-left: 25px;
     }
+    .container{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .additional-description{
+        line-height: normal;
+    }
 }
 @media (max-width: 460px){
     form{
@@ -342,6 +349,10 @@ body{
     }
     .query{
         width: 280px;
+    }
+    .select-size{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 425px){
