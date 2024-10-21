@@ -9,6 +9,9 @@ body{
     color: rgb(2, 203, 253);
     text-decoration: none;
 }
+.navebar a:link,a:visited,a:active{
+    color: white;
+}
 .nav{
     position: fixed;
     top: 0;
