@@ -258,6 +258,9 @@ a:hover {
     cursor: pointer;
     transition: transform .3s ease, opacity .15s ease;
 }
+.added{
+    background-color: #28a745;
+}
 .add-to-cart-button:hover {
     opacity: .6;
     transform: scale(1.05);

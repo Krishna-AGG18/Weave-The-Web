@@ -76,8 +76,14 @@ document.querySelectorAll('.add-to-cart-button')
             event.stopPropagation();
             const productName = button.dataset.productName;
             addToCart(productName);
+
+            button.innerText = 'Added !!';
+            button.classList.add('added');
+            setTimeout(() => {
+                button.innerText = 'Add to Cart';
+                button.classList.remove('added');
+            }, 1500);
         })
-        
     });
 
 
