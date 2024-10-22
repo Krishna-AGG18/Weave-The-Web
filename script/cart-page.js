@@ -1,8 +1,16 @@
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
+
 import {cart, removeFromCart, saveCartInLocalStorage} from '../Js-files/cart.js';
 import { latestCollectionItems } from '../Js-files/latest-collections-items.js';
 import { bestSellers } from '../Js-files/best-sellers.js';
 import { all } from '../Js-files/all.js';
 import { menuIcon } from './login-page.js';
+import {updateCartCount} from '../Js-files/cart.js';
 
 menuIcon();
 let arrayName = latestCollectionItems.concat(all);
@@ -126,6 +134,7 @@ function update(arrayName){
 document.querySelector('.clear-button')
     .addEventListener('click', () =>{
         cart.length = 0;
+        updateCartCount();
         saveCartInLocalStorage();
         displayCart();
     })

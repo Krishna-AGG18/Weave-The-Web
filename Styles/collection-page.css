@@ -433,7 +433,7 @@ input {
     transition: all .2s ease;
 }
 .right-side div{
-    font-size: 27px;
+    font-size: 24px;
     margin-left: 36px;
     transition: all .2s ease;
 }
@@ -535,6 +535,12 @@ input {
     padding: 14px 0px; */
     height: 332px;
     padding: 24px 0px 18px 0px;
+}
+
+.navebar a:link,
+a:visited,
+a:active{
+    color: white;
 }
 /* .menu-on-click{
     top: 281px;

@@ -1,4 +1,12 @@
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
 // import { menuIcon } from "./script.js";
+import {updateCartCount} from '../Js-files/cart.js';
+updateCartCount();
 
 export function menuIcon() {
     let menu = document.querySelector('.menu-icon');

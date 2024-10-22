@@ -1,3 +1,10 @@
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
+
 import {latestCollectionItems} from '../Js-files/latest-collections-items.js';
 import {cart, addToCart} from '../Js-files/cart.js';
 import { menuIcon } from './login-page.js';

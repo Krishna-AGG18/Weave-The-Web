@@ -1,3 +1,10 @@
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
+
 import { mens, mensTop, mensBottom } from "../Js-files/men.js";
 import { womens, womensTop, womensBottom } from "../Js-files/women.js";
 import { all, allTop, allBottom } from "../Js-files/all.js";

@@ -174,7 +174,7 @@ a:hover{
     transition: all .3s ease;
 }
 .center-side{
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     transition: all .2s ease;
@@ -318,4 +318,14 @@ a:hover{
 .right-side-extended{
     margin-right: 33px;
     width: 134px;
+}
+
+.center-side div a{
+    color: white;
+}
+
+.navebar a:link,
+a:visited,
+a:active{
+    color: white;
 }

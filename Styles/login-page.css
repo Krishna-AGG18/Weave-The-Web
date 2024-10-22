@@ -26,9 +26,6 @@ body{
 .row{
     width: 100vw;
 }
-a:link,a:visited,a:active{
-    color: white;
-}
 .row div{
     padding: 25px;
     font-size: 20px;
@@ -247,6 +244,7 @@ form{
     transition: all .2s ease;
 }
 .right-side div{
+    font-size: 29px;
     margin-left: 36px;
     transition: all .2s ease;
 }
@@ -380,6 +378,12 @@ footer{
 .row div{
     padding: 15px 15px 0px 15px;
 }
-.nav-links:active{
+/* .nav-links:active{
     color: yellow;
+} */
+
+.navebar a:link,
+a:visited,
+a:active{
+    color: white;
 }

@@ -32,9 +32,6 @@ body{
 .row{
     width: 100vw;
 }
-a:link,a:visited,a:active{
-    color: white;
-}
 .row div{
     padding: 25px;
     font-size: 20px;
@@ -634,4 +631,9 @@ body{
 .right-side-extended{
     margin-right: 33px;
     width: 134px;
+}
+.navebar a:link,
+a:visited,
+a:active{
+    color: white;
 }

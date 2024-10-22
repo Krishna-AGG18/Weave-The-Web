@@ -53,7 +53,7 @@ export let mensTop = [
         price: 699
     }  , {
         img: 'https://i.pinimg.com/564x/a8/a1/f1/a8a1f1550278a9061e6c65a50071fd2f.jpg',
-        name: 'Men Geo Print Shirt Without Tee',
+        name: 'Men Geo Print Shirt',
         rating:{
             star: '★★★★☆',
             ratingNumber: 129
@@ -217,7 +217,7 @@ export let mensBottom = [
     ,
     {
         img: 'https://i.pinimg.com/564x/07/0d/25/070d25b8a007629132ffd5b8151cd60c.jpg',
-        name: 'Mens flare Pants',
+        name: "Men's Blue Linen Flare Trousers",
         rating:{
             star: '★★★★☆',
             ratingNumber: 195
