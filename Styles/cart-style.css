@@ -32,6 +32,9 @@ body{
 .row{
     width: 100vw;
 }
+a:link,a:visited,a:active{
+    color: white;
+}
 .row div{
     padding: 25px;
     font-size: 20px;
