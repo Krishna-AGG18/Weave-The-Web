@@ -7,6 +7,7 @@ export function saveCartInLocalStorage(){
 }
 
 export function addToCart(name){
+    cart = JSON.parse(localStorage.getItem('cart'));
     let element;
 
     cart.forEach((value) => {
