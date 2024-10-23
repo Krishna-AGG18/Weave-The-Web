@@ -84,6 +84,9 @@ function generateHtmlForCollectionPage(arrName) {
                 </div>
                 <div class="add-to-cart-button-container">
                     <button class="add-to-cart-button" data-product-name="${value.name}">Add to Cart</button>
+                    <div class= "added">
+                    <p class="added-text"> ✅ Added !! </p>
+                    </div>
                 </div>
             </div>
         `;
@@ -112,12 +115,13 @@ function generateHtmlForCollectionPage(arrName) {
             const productName = button.dataset.productName;
             addToCart(productName);
 
-            button.innerText = 'Added !!';
-            button.classList.add('added');
-            setTimeout(() => {
-                button.innerText = 'Add to Cart';
-                button.classList.remove('added');
-            }, 1500);
+            // let txt = document.querySelector('.added-text');
+            let txt = button.closest('.add-to-cart-button-container').querySelector('.added');
+            txt.style.display = "flex";
+
+             setTimeout(() => {
+                txt.style.display = "none";
+            }, 1000);
         })
         
     });

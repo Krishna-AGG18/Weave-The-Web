@@ -20,7 +20,7 @@ export const latestCollectionItems = [
     },
     {
         img: 'https://i.pinimg.com/564x/07/0d/25/070d25b8a007629132ffd5b8151cd60c.jpg',
-        name: 'Mens flare Pants',
+        name: 'Mens flare Pants || Pants for Men',
         rating:{
             star: '★★★★☆',
             ratingNumber: 195
@@ -56,7 +56,7 @@ export const latestCollectionItems = [
     },
     {
         img: 'https://i.pinimg.com/564x/46/e0/19/46e0198f13db37ddf580f126b90437d2.jpg',
-        name: 'Classic Men Short Sleeve Shirt - White and Black / XL',
+        name: 'Classic Men Short Sleeve Shirt',
         rating:{
             star: '★★★★☆',
             ratingNumber: 365
@@ -65,7 +65,7 @@ export const latestCollectionItems = [
     },
     {
         img: 'https://i.pinimg.com/564x/fb/ff/79/fbff79d6d19f88968ad6771374cf62a6.jpg  ',
-        name: 'classic blue top',
+        name: 'Classic blue top || Top for Women',
         rating:{
             star: '★★★★☆',
             ratingNumber: 145

@@ -32,7 +32,11 @@ export function createHtml(collectionItems, name){
 
                 <div class="add-to-cart-button-container">
                     <button class="add-to-cart-button" data-product-name="${value.name}">Add to Cart</button>
+                    <div class= "added">
+                    <p class="added-text"> ✅ Added !! </p>
+                    </div>
                 </div>
+                
             </div>`;
     });
 
@@ -77,12 +81,13 @@ document.querySelectorAll('.add-to-cart-button')
             const productName = button.dataset.productName;
             addToCart(productName);
 
-            button.innerText = 'Added !!';
-            button.classList.add('added');
+            // let txt = document.querySelector('.added-text');
+            let txt = button.closest('.add-to-cart-button-container').querySelector('.added-text');
+            txt.style.opacity = "1";
+
             setTimeout(() => {
-                button.innerText = 'Add to Cart';
-                button.classList.remove('added');
-            }, 1500);
+                txt.style.opacity = "0";
+            }, 1000);
         })
     });
 

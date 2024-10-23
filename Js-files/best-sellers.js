@@ -20,7 +20,7 @@ export let bestSellers = [
     ,
     {
         img: 'https://i.pinimg.com/564x/a1/39/45/a13945f69b3fd94cc2b22c8e45364f30.jpg',
-        name: 'Polo shirt men',
+        name: 'Polo shirt men || Shirt for Men',
         rating:{
             star: '★★★★☆',
             ratingNumber: 785
@@ -30,7 +30,7 @@ export let bestSellers = [
     ,
     {
         img: 'https://i.pinimg.com/564x/5b/97/e0/5b97e013eca6e02225d55d100d79c84a.jpg',
-        name: 'T shirt women',
+        name: 'T-shirt women || T-shirt for Women',
         rating:{
             star: '★★★★☆',
             ratingNumber: 785
@@ -40,7 +40,7 @@ export let bestSellers = [
     ,
     {
         img: 'https://i.pinimg.com/enabled_lo/236x/69/2b/0a/692b0a2cda399231b0d5685e3615b497.jpg',
-        name: 'Children T shirt',
+        name: 'Children T-shirt || T-shirt for Children',
         rating:{
             star: '★★★★☆',
             ratingNumber: 785
@@ -60,7 +60,7 @@ export let bestSellers = [
     ,
     {
         img: 'https://i.pinimg.com/236x/96/72/71/967271987ba174bd47c4b3a4ca7c2827.jpg',
-        name: 'T- shirt for men',
+        name: 'T- shirt for men || Cotton',
         rating:{
             star: '★★★★☆',
             ratingNumber: 785
@@ -70,7 +70,7 @@ export let bestSellers = [
     ,
     {
         img: 'https://i.pinimg.com/enabled_lo/564x/8c/58/6a/8c586a970b043e42e126b7d836f4d5d7.jpg',
-        name: 'waffle knit shirt for men ',
+        name: 'Waffle knit shirt for men ',
         rating:{
             star: '★★★★☆',
             ratingNumber: 785
