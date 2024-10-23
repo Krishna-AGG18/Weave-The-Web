@@ -76,5 +76,23 @@ export let bestSellers = [
             ratingNumber: 785
         },
         price: 799
+    },
+    {
+        img: 'https://i.pinimg.com/736x/4c/77/f6/4c77f6e0210bca7d2737dbb8b2513675.jpg',
+        name: 'Denim Black Jacket || Jacket for Men',
+        rating:{
+            star: '★★★★☆',
+            ratingNumber: 785
+        },
+        price: 1099
+    },
+    {
+        img: 'https://i.pinimg.com/736x/73/40/42/7340428bc407dd70008c24775acb1753.jpg',
+        name: 'Casual Printed T-shirt || T-shirt for Men',
+        rating:{
+            star: '★★★★☆',
+            ratingNumber: 785
+        },
+        price: 699
     }
 ]

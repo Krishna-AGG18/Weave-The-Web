@@ -72,5 +72,23 @@ export const latestCollectionItems = [
         },
         price: 499
         
+    },
+    {
+        img : 'https://i.pinimg.com/enabled/564x/45/8a/02/458a027d19ef50e6ec48a1b789847d6d.jpg',
+        name: 'Hip Hop Loose Mens Streetwear T-shirts',
+        rating:{
+            star: '★★★★☆',
+            ratingNumber: 145
+        },
+        price: 799
+    },
+    {
+        img : 'https://i.pinimg.com/564x/8e/5c/4a/8e5c4a213342e53d9a54e3de9b1d01b5.jpg',
+        name: 'Fashion Short Sleeves Hip Hop T-shirt',
+        rating:{
+            star: '★★★★☆',
+            ratingNumber: 145
+        },
+        price: 759
     }
 ]
