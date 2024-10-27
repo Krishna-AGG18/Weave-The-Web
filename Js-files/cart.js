@@ -5,55 +5,53 @@ window.addEventListener('pageshow', function(event) {
 });
 
 
-// Initialize cart from localStorage safely, ensuring it's an array
-let cart = [];
-if (typeof localStorage !== "undefined") {
-    const storedCart = localStorage.getItem('cart');
-    cart = storedCart ? JSON.parse(storedCart) : [];
-} else {
-    console.error("LocalStorage is not available.");
+export let cart = JSON.parse(localStorage.getItem('cart'));
+
+if (!cart) cart = [];
+
+updateCartCount();
+export function updateCartCount(){
+    document.querySelector('.cart-items-count')
+        .innerHTML = cart.length;
 }
 
-// Update cart count display
-function updateCartCount() {
-    const cartItemsCount = document.querySelector('.cart-items-count');
-    if (cartItemsCount) {
-        cartItemsCount.innerHTML = cart.length;
-    } else {
-        console.error("Cart items count element not found.");
-    }
+export function saveCartInLocalStorage(){
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Save cart back to localStorage
-function saveCartInLocalStorage() {
-    if (typeof localStorage !== "undefined") {
-        localStorage.setItem('cart', JSON.stringify(cart));
-    } else {
-        console.error("LocalStorage is not available.");
-    }
-}
+export function addToCart(name){
+    cart = JSON.parse(localStorage.getItem('cart'));
+    let element;
 
-// Add to cart function
-export function addToCart(name) {
-    console.log("Adding to cart:", name);
-    
-    // Ensure cart is loaded correctly before proceeding
-    cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.forEach((value) => {
+        if (name === value.name) element = value;
+    })
 
-    // Find if item already exists in cart
-    let element = cart.find(item => item.name === name);
-
-    if (element) {
+    if (element){
         element.quantity += 1;
-    } else {
+    }
+    else{
         cart.push({
             name: name,
             quantity: 1
-        });
+        })
     }
+    console.log(cart);
+    updateCartCount();
 
-    console.log("Updated cart:", cart);
+    saveCartInLocalStorage();
+}
+
+export function removeFromCart(name){
+    let newCart = [];
+    cart.forEach((value) =>{
+        if (value.name !== name){
+            newCart.push(value);
+        }
+    })
+    cart = newCart;
 
     updateCartCount();
+
     saveCartInLocalStorage();
 }
