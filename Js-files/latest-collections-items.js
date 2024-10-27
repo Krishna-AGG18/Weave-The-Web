@@ -84,7 +84,7 @@ export const latestCollectionItems = [
     },
     {
         img : 'https://i.pinimg.com/564x/8e/5c/4a/8e5c4a213342e53d9a54e3de9b1d01b5.jpg',
-        name: 'Fashion Short Sleeves Hip Hopd',
+        name: 'Fashion Short Sleeves Hip Hop',
         rating:{
             star: '★★★★☆',
             ratingNumber: 145
